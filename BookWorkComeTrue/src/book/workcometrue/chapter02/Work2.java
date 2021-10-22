@@ -8,7 +8,8 @@ public class Work2 {
 
         /* 显示欢迎界面及菜单项 */
         System.out.println("欢迎使用职工工资计算系统！");
-        System.out.println("选择进行操作的类型：1.用户类型选择 2.单个职工工资计算 3.多个职工工资计算 4.退出");
+        System.out.println("选择进行操作的类型：");
+        System.out.println("1.用户类型选择 2.单个职工工资计算 3.多个职工工资计算 4.退出");
         
         /* 获取菜单项编号 */
         Scanner sc = new Scanner(System.in);
