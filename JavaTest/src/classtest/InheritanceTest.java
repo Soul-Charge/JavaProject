@@ -1,5 +1,7 @@
-/* Example6_1.java -- Shape Circle Rectangle 类（使用继承）*/
-package book.example.chapter06;
+/* InheritanceTest.java -- 测试继承*/
+package classtest;
+
+import book.example.chapter06.Shape;
 
 class Shape {
     String color;
@@ -20,8 +22,8 @@ class Circle extends Shape {
     Circle() {
     }
     Circle(double radius, String color) {
-        this.color = color;
         this.radius = radius;
+        this.color = color;
     }
 
     double getRadius() {
@@ -52,8 +54,8 @@ class Rectangle extends Shape {
     Rectangle(String color, double length, double width) {
         /* 可以用两种不同的方法来初始化继承自Shape的成员变量color */
         //super.color = color; // 通过super获取继承自基类的color变量
-        //this.color = color;  // 通过this指向自身继承来的color变量
         super(color);          // 通过调用基类的构造器
+        this.color = color;
         this.length = length;
         this.width = width;
     }
@@ -84,18 +86,12 @@ class Rectangle extends Shape {
     }
 }
 
-public class Example6_1 {
+public class InheritanceTest {
 
     public static void main(String[] args) {
-        
-        Circle c = new Circle();
-        c.setRadius(10);
-        c.color = "red";
-        c.disp();
-        
-        System.out.println("------------------------------------");
-        
+
         Rectangle r = new Rectangle("blue", 20, 10);
         r.disp();
     }
+
 }
