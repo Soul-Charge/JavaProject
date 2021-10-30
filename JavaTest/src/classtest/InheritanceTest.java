@@ -34,6 +34,6 @@ public class InheritanceTest {
         Shape s = new Shape("blue");
         Circle c = new Circle("red", 10);
         c.disp();
-        System.out.println(s.color);
+        System.out.println(s.color); // blue
     }
 }
