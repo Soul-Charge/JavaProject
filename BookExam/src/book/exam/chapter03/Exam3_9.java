@@ -19,5 +19,4 @@ public class Exam3_9 {
             System.out.print(sum + " ");
         }
     }
-
 }
